@@ -1,0 +1,25 @@
+/* Languages.css */
+.languages-section {
+  opacity: 0;
+  transform: translateX(-100px); /* start off to the left */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.languages-section.slide-in {
+  opacity: 1;
+  transform: translateX(0); /* slide to normal position */
+}
+
+.languages-section h1 {
+  font-family: 'Rowdies', sans-serif;
+  font-size: 4rem;
+  text-decoration: underline;
+  margin-bottom: -3rem;
+  text-align: center;         
+}
+
+@media (max-width: 640px) {
+  .languages-section h1 {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,15 @@
+/* CursorBlur.css */
+.cursor-blur {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background: rgb(70, 209, 255); /* soft blue */
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(30px);
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+  z-index: 9999;
+}
