@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "homepage": "https://nicholas-garcia-scholtz.github.io/PersonalWebsite/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,9 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeplow": "npm run build",
+    "deploy": "gh-pages -d dist" 
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "styled-components": "^6.1.19"
